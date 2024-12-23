@@ -9,14 +9,14 @@ function Login() {
                 <h4>For Enquiry : +91 9014869842 </h4>
             </div>
 
-        <div className="navbar">
-            <a href="link" >Home</a>
-            <a href="link" >services</a>
-            <a href="link" >About Us</a>
+            <div className="navbar">
+                <a href="link" >Home</a>
+                <a href="link" >services</a>
+                <a href="link" >About Us</a>
 
-            <a href="link" >Contact Us</a>
+                <a href="link" >Contact Us</a>
 
-        </div>
+            </div>
             <div className="email-box">
                 <h2>Login Here</h2>
                 <label>Email</label>
@@ -25,9 +25,13 @@ function Login() {
                 <label>Password</label>
                 <input className="input-box" type="text" placeholder="Enter password" />
 
-                <a href="https://www.google.com">Create New Account</a>
-                <a href="https://www.google.com">Forget Password?</a>
-                <button className="login-button" >  Login</button>
+
+                <div className="link-container">
+                    <a href="https://www.google.com">Create New Account</a>
+                    <a href="https://www.google.com">Forget Password?</a>
+                </div>
+
+                <button className="login-button" >Login</button>
             </div>
             <button className="login-btn" >  Login</button>
 
