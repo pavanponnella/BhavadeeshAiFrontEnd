@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+/* 
+.App-link {
+  color: #61dafb;
+} */
+/* 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Horizontal center */
+  align-items: center;
+  /* Vertical center */
+  height: 100vh;
+  /* Full screen height */
+  position: relative;
+  /* Relative positioning for the pseudo-element */
+}
+
+.container::before {
+  content: "";
+  /* Creates a pseudo-element */
+  position: absolute;
+  /* Position it absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Full width */
+  height: 10%;
+  /* Only covers the top half */
+  background-color: black;
+  /* Black background */
+  z-index: -1;
+  /* Sends it behind the login box */
+}
+
+.email-box {
+  position: absolute;
+  /* Position relative to the nearest positioned ancestor */
+  top: 150px;
+  /* Adjust the vertical position (optional) */
+  right: 200px;
+  /* Adjust how far from the right edge it will be */
+  width: 290px;
+  /* Fixed width for consistency */
+}
+
+.input-box {
+  width: 120%;
+  /* Make the input field take up the full width of the container */
+  padding: 9px;
+  /* Increase padding for larger input field */
+  font-size: 15px;
+  /* Adjust font size for better visibility */
+  height: 30px;
+  /* Set the height of the input box */
+  box-sizing: border-box;
+  /* Ensures padding and border are included in the total width and height */
+}
+
+.navbar{
+  position: absolute;
+  /* Moves button to top-right */
+  top: 80px;
+  right: 200px;
+  padding: 10px 30px;
+  color: white;
+}
+.enquiry {
+  position: absolute;
+  /* Moves button to top-right */
+  top: 0px;
+  right: 300px;
+  padding: 10px 30px;
+  color: white;
+
+
+  /* Smooth transition effect */
+}
+
+
+
+.login-btn {
+  position: absolute;
+  /* Moves button to top-right */
+  top: 15px;
+  right: 15px;
+  padding: 10px 30px;
+  background-color: #e04912;
+  /* Default color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  /* Smooth transition effect */
+}
+
+/* Hover effect */
+.login-btn:hover {
+  background-color: #5f45a0;
+  /* Change color on hover */
+}
+
+
+/* Add space between links */
+a {
+  margin-right: 20px;
+  /* Adds space to the right of each link */
+  text-decoration: none;
+  /* Optional: removes underline from links */
+  color: blue;
+  /* Optional: style the link color */
+}
+
+a:last-child {
+  margin-right: 0;
+  /* Removes right margin from the last link */
+}
+
+label {
+  font-weight: bold;
+  /* Make the text bold */
+
+}
+
+
+
+.login-button {
+  position: absolute;
+  /* Moves button to top-right */
+  top: 230px;
+  right: 60px;
+  padding: 10px 30px;
+  background-color: #e04912;
+  /* Default color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  /* Smooth transition effect */
+}
+
+.login-button:hover {
+  background-color: #5f45a0;
+  /* Change color on hover */
+}
+
+/* Flex container for links */
+.links {
+  display: flex;
+  /* Use flexbox to align the links horizontally */
+  justify-content: flex-start;
+  /* Align to the left */
+  gap: 20px;
+  /* Add space between the links */
+}
+
+a {
+  text-decoration: none;
+  /* Optional: removes underline from links */
+  color: blue;
+  /* Optional: style the link color */
+}
+/* Style for the image */
+.logo-image {
+  width: 300px;            /* Adjust the width */
+  height: auto;            /* Maintain aspect ratio */
+  margin-bottom: 40px;     /* Space below the image */
+  position: relative;      /* Use relative positioning */
+  left: -200px;             /* Move the logo 50px to the left */
+}
+
+.logoimage {
+  width: 150px;            /* Adjust the width */
+  height: auto;            /* Maintain aspect ratio */
+  margin-bottom: 20px;     /* Space below the image */
+  position: relative;      /* Use relative positioning */
+  left: -700px;            /* Move to the left */
+  top: -195px;             /* Move 100px upwards */
+}
+
