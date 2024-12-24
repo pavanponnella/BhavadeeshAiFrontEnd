@@ -1,6 +1,4 @@
 
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -44,17 +42,19 @@
   
   
   .input-box {
-    width: 120%;
+    width: 100%;
     /* Make the input field take up the full width of the container */
     padding: 9px;
     /* Increase padding for larger input field */
     font-size: 13px;
     /* Adjust font size for better visibility */
-    height: 30px;
+    height: 35px;
     /* Set the height of the input box */
     box-sizing: border-box;
     /* Ensures padding and border are included in the total width and height */
+    border-radius: 10px; /* Adds curved corners */
   }
+  
   
   .navbar{
     position: absolute;
@@ -67,32 +67,49 @@
   .enquiry {
     position: absolute;
     /* Moves button to top-right */
-    top: 0px;
-    right: 300px;
+    top: -10px;
+    right: 400px;
     padding: 10px 30px;
     color: white;
   
   
     /* Smooth transition effect */
   }
+  .you-tubechannel {
+    position: absolute;
+    /* Moves button to top-right */
+    top: 10px; /* Adjust this value to move it down */
+    right: 30px;
+    padding: 10px 30px;
+    color: white; /* This will apply the white color to the text inside the div */
+}
+
+
+.you-tubechannel a {
+    color: white; /* Set the link color to white */
+    text-decoration: underline; /* Remove the underline */
+}
+
+.you-tubechannel a:hover {
+    color: lightgray; /* Optional: Change color on hover */
+}
+
   
   
   
   .login-btn {
     position: absolute;
-    /* Moves button to top-right */
-    top: 15px;
-    right: 15px;
+    bottom: 480px;  /* Moves the button to the bottom */
+    right: 15px;   /* Keeps the button aligned to the right */
     padding: 10px 30px;
-    background-color: #e04912;
-    /* Default color */
+    background-color:#e04912;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.3s ease;
-    /* Smooth transition effect */
-  }
+    transition: 0.3s ease;  /* Smooth transition effect */
+}
+
   
   /* Hover effect */
   .login-btn:hover {
@@ -128,8 +145,8 @@
     position: absolute;
     /* Moves button to top-right */
     top: 230px;
-    right: 60px;
-    padding: 10px 30px;
+    right: 30px;
+    padding: 8px 100px;
     background-color: #e04912;
     /* Default color */
     color: white;
@@ -163,9 +180,9 @@
   }
   /* Style for the image */
   .logo-image {
-    width: 250px;            /* Adjust the width */
+    width: 300px;            /* Adjust the width */
     height: auto;            /* Maintain aspect ratio */
-    margin-bottom: 40px;     /* Space below the image */
+    margin-bottom: 20px;     /* Space below the image */
     position: relative;      /* Use relative positioning */
     left: -200px;      
               /* Move the logo 50px to the left */
@@ -191,4 +208,39 @@
     color: blue;              /* Set link color */
     font-size: 14px;          /* Adjust font size */
   }
-  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-line {
+    border-left: 2px solid #000;
+    height: 250px;  /* Adjust the height to suit your design */
+    margin: 0 20px;  /* Space on the left and right of the line */
+}
+
+
+
+.youtube-container {
+    position: absolute;   /* Positions the container absolutely */
+    top: 12px;            /* Distance from the top of the container */
+    right: 10px;          /* Distance from the right of the container */
+    display: flex;        /* Flexbox allows the image and text to sit in a row */
+    align-items: center;  /* Vertically centers the content (image and text) */
+    text-decoration: none; /* Ensures no underline for the link */
+}
+
+.youtubeicon {
+    width: 30px;          /* Set the size of the image */
+    height: auto;         /* Maintain aspect ratio */
+    margin-right: 0px;    /* No margin between image and text */
+}
+
+.youtube-container span {
+    color: white;         /* Set the text color to white */
+    text-decoration: underline; /* Underline text */
+    margin: 0;            /* Removes default margin around the text */
+    padding: 0;           /* Removes any padding */
+    line-height: 0;       /* Prevents any extra space between image and text */
+}
