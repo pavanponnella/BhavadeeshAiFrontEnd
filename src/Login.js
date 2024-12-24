@@ -42,7 +42,7 @@ function Login() {
             <a className="login-btn" href="http://10.11.54.70:8080/LoginSucessfull">Login</a>
             {/* <button className="login-btn" >  Login</button> */}
             <div className="line"></div> {/* Custom line using div */}
-            <img src="./BhavadeeshAI.png" alt="Logo" className="logo-image" />
+            <img src="./Bhavadeeshai.png" alt="Logo" className="logo-image" />
             <div className="vertical-line"></div>
             <img src="./image.png" alt="Logo" className="logoimage" />
 
