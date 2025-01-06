@@ -1,0 +1,30 @@
+
+
+.unlock-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.unlock-button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
