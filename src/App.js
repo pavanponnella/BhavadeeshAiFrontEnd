@@ -10,6 +10,10 @@ import UnlockAccount from "./UnlockAccount";
 import Enquiry from './Enquiry';
 import ForgotPassword from './ForgotPassword'; 
 
+import FormData from './FormData'; // Corrected import statement
+
+
+
 export const ipaddredd = '10.11.54.70';
 // '10.11.54.70';
 // '10.11.50.142';
@@ -32,7 +36,9 @@ function App() {
 
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/enquiry" element={<  Enquiry />} />
-              
+                <Route path="/enquiryFormData" element={<FormData />} /> 
+
+             
             </Routes>
         </Router>
 

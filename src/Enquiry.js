@@ -110,13 +110,19 @@ function Enquiry() {
                         />
 
                         <label>Course Name <span style={{ color: "red" }}> *</span></label>
-                        <input
+                        <select
                             className="input-box"
-                            type="text"
-                            placeholder="Enter Course Name"
                             value={courseName}
                             onChange={(e) => setCourseName(e.target.value)}
-                        />
+                        >
+                            <option value="">Select Course</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="DevOps">DevOps</option>
+                            <option value="React.js">React.js</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                        </select>
 
                         <label>Enquiry Status <span style={{ color: "red" }}> *</span></label>
                         <select
