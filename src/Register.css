@@ -1,15 +1,15 @@
-
 .register-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: hsl(0, 100%, 50%);
+    padding: 10px 60px;
+    background-color: #4CAF50; /* Fresh green color */
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 9px;
     cursor: pointer;
-
-    margin-top: 20px; /* Moves the button down */
+margin-left: 10px
+    /* margin-top: 20px; Moves the button down */
 }
+
 
 
 
