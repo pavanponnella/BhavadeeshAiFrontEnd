@@ -4,12 +4,10 @@
     background-color: #f9f9f9;
     border-radius: 5px;
 }
-
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .error-message {
     color: red;
     text-align: center;
@@ -22,21 +20,31 @@ h2 {
     margin-top: 20px;
 }
 
+
+
+
+
+
+
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 .data-table th, .data-table td {
+    padding: 12px;
     border: 1px solid #ddd;
-    padding: 8px;
     text-align: left;
 }
 
 .data-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #f4f4f4;
 }
-
-.data-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.data-table tr:hover {
-    background-color: #f1f1f1;
+.search-filters select {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

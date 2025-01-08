@@ -1,0 +1,81 @@
+/* Dashboard Container */
+.DashBoard {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #F0F8FF; /* Light blue background for a fresh and calming feel */
+    height: 100vh; /* Full viewport height */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Rounded corners */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+/* Heading Style */
+.DashBoard h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2C3E50; /* Dark blue-gray for the heading */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* Links Container */
+.DashBoardLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between links */
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Individual Link Style (Buttons) */
+.DashBoardLink {
+    display: inline-block;
+    padding: 18px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Circular button corners */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Light shadow for modern look */
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #3B9DFF, #00BFFF); /* Fresh gradient for the background */
+    background-origin: border-box;
+    background-clip: content-box, border-box; /* Creates a gradient border */
+}
+
+/* Create Enquiry Link (specific style) */
+.DashBoardLink:first-child {
+    background-color: #3498DB; /* Sky blue for Create Enquiry */
+    background-image: linear-gradient(to right, #3498DB, #1D6B96); /* A subtle gradient for variety */
+    border-color: #1D6B96; /* Matching border color with gradient */
+}
+
+/* View Enquiry Link (specific style) */
+.DashBoardLink:last-child {
+    background-color: #27AE60; /* Fresh green for View Enquiry */
+    background-image: linear-gradient(to right, #27AE60, #2ECC71); /* A gradient of green shades */
+    border-color: #2ECC71; /* Matching border color with gradient */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .DashBoardLink {
+        width: 80%; /* Full width on smaller screens */
+        padding: 12px 25px; /* Adjust padding */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .DashBoard h1 {
+        font-size: 2em; /* Slightly smaller heading on mobile */
+    }
+}

@@ -1,3 +1,4 @@
+// Login.js
 import React, { useState, useEffect } from "react";
 import './Login.css';
 import { Link } from "react-router-dom";
@@ -5,24 +6,21 @@ import { ipaddredd } from './App';
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-    // State for email, password, error, and success messages
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
     const navigate = useNavigate();
 
-    // Clear error when email or password changes
     useEffect(() => {
         if (email || password) {
             setError("");
         }
     }, [email, password]);
 
-    // Navigate on success
     useEffect(() => {
         if (success) {
-            navigate('/enquiry');
+            navigate('/DashBoardPage');
         }
     }, [success, navigate]);
 
@@ -53,7 +51,7 @@ function Login() {
             });
             const data = await response.json();
             if (response.ok) {
-                setSuccess(data.message); // Update success message
+                setSuccess(data.message);
                 setError("");
             } else {
                 switch (response.status) {
@@ -82,10 +80,10 @@ function Login() {
                 <span>Our Free Tutorials</span>
             </a>
             <div className="navbar">
-                <a href="link">Home</a>
+                <a href="/">Home</a>
                 <a href="link">Services</a>
                 <a href="link">About Us</a>
-                <a href="link">Contact Us</a>
+                <a href="https://pavanponnellaportfolio.vercel.app/">Contact Us</a>
             </div>
             <div className="email-box">
                 <h2>Login Here</h2>
@@ -119,11 +117,8 @@ function Login() {
                 </form>
             </div>
             <div className="line"></div>
-            <img src="./springboot.jpg" alt="Logo" className="logo-image" />
+            {/* <img src="./springboot.jpg" alt="Logo" className="logo-image" /> */}
             <div className="vertical-line"></div>
-            {/* <a href="/login">
-                <img src="./image.png" alt="Logo" className="logoimage" />
-            </a> */}
         </div>
     );
 }
